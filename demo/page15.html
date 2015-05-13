@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>更改城市</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<link href="style/reset.css" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<link href="style/main.css" rel="stylesheet">
+<link rel="stylesheet" href="style/jquery.range.css">
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery.range.js"></script>
+</head>
+<body>
+    <div class="page page_tempre">
+    	<h2 class="head"><a href="page8.html" class="icon_back"><</a><span class="head_main">温度选择</span></h2>
+    	<div class="con">
+			<span>最低温度：<i class="wea_num">5°</i></span>
+			<span>最高温度：<i class="wea_num">25°</i></span>
+			<div class="demo-output">
+				<input class="range-slider" type="hidden" value="10,30" style="display: none;">
+				<div class="slider-container theme-green" style="width: 250px; display:none">
+					<div class="back-bar">
+						<div class="selected-bar" style=""></div>
+						<div class="pointer low" style=""></div>
+						<div class="pointer-label" style="">5℃</div>
+						<div class="pointer high" style=""></div>
+						<div class="pointer-label" style="">75</div>
+						<div class="clickable-dummy"></div>
+					</div>
+					<div class="scale">
+						<span style="left: 0%"><ins style="margin-left: -3.5px;">0</ins></span>
+						<span style="left: 25%"><ins style="margin-left: -6.5px;">25</ins></span>
+						<span style="left: 50%"><ins style="margin-left: -6.5px;">50</ins></span>
+						<span style="left: 75%"><ins style="margin-left: -6.5px;">75</ins></span>
+						<span style="left: 100%"><ins style="margin-left: -10px;">100</ins></span>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </div>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.range-slider').jRange({
+                from: 0,
+                to: 40,
+                step: 1,
+                scale: [0,10,20,30,40],
+                format: '%s',
+                width: 270,
+                showLabels: true,
+                isRange : true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我的衣橱</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<link href="style/reset.css" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page page_myclost">
+    	<h2 class="head"><span class="head_main">我的衣橱</span><a id="promptBtn" href="javascript:;" class="icon icon2">+</a></h2>
+    	<div class="con">
+	    	<ul class="clearfix">
+	    		<li>
+	    			<a href="page5.html">
+	    				<span class="txt">裙装(<span class="num">8</span>)</span>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="page5.html">
+	    				<span class="txt">衬衫(<span class="num">9</span>)</span>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="page5.html">
+	    				<span class="txt">裤子(<span class="num">10</span>)</span>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="page5.html">
+	    				<span class="txt">毛衣(<span class="num">6</span>)</span>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="page5.html">
+	    				<span class="txt">鞋(<span class="num">5</span>)</span>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="page5.html"></a>
+	    		</li>
+	    	</ul>
+    	</div>
+    	<div class="foot">
+    		<ul class="clearfix">
+    			<li><a href="page3.html"><i class="icon icon3"></i>天气</a></li>
+    			<li class="curr"><a href="page4.html"><i class="icon icon4"></i>我的衣橱</a></li>
+    			<li><a href="page1.html"><i class="icon icon5"></i>搭配</a></li>
+    			<li><a href="page9.html"><i class="icon icon6"></i>统计</a></li>
+    		</ul>
+    	</div>
+    </div>
+<script src="js/mui.min.js"></script>
+<script>
+	document.getElementById("promptBtn").addEventListener('click',function(){
+			  	var btnArray = ['储存','取消'];
+			  	mui.prompt('请输入类别名称','类别名称','新建类别',btnArray,function(e){
+			  		if(e.index==0){
+			  			info.innerText = '谢谢你的评语：'+e.value;
+			  		}else{
+			  			info.innerText = '你点了取消按钮';
+			  		}
+			  	})
+			  });
+</script>
+</body>
+</html>

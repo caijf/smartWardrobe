@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>天气首页</title>
+	<link href="css/mui.min.css" rel="stylesheet"/>
+	<link href="style/reset.css" rel="stylesheet">
+	<link href="style/style.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.js"></script>
+    <script src="js/mui.min.js"></script>
+</head>
+<body>
+<div class="mui-content">
+		<div class="page page_weather">
+    			<h2 class="head">
+				<div id="mySlider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="page2.html">	
+								<div class="tit">明天 · 无锡<i class="icon"></i></div>
+					    			<div class="temp">
+				                        <span class="weather_icon"></span>
+					    				18~25℃
+					    			</div>
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="page2.html">
+								<div class="tit">今天 · 无锡<i class="icon"></i></div>
+					    			<div class="temp">
+				                        <span class="weather_icon"></span>
+					    				18~25℃
+					    			</div>
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="page2.html">
+								<div class="tit">明天 · 无锡<i class="icon"></i></div>
+					    			<div class="temp">
+				                        <span class="weather_icon"></span>
+					    				18~25℃
+					    			</div>
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="page2.html">	
+								<div class="tit">后天 · 无锡<i class="icon"></i></div>
+					    			<div class="temp">
+				                        <span class="weather_icon"></span>
+					    				18~25℃
+					    			</div>
+							</a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="page2.html">
+								<div class="tit">今天 · 无锡<i class="icon"></i></div>
+					    			<div class="temp">
+				                        <span class="weather_icon"></span>
+					    				18~25℃
+					    			</div>
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+    				<a href="javascript:;" class="curr"></a><a href="javascript:;"></a><a href="javascript:;"></a>
+   			</h2>
+	    		<div class="con" id="j_recommend">
+			    	<span class="unfold">></span>
+			    	<ul class="clearfix img_show">
+			    		<li><img src="images/weather1.png" alt=""></li>
+			    		<li><img src="images/weather1.png" alt=""></li>
+			    		<li><img src="images/weather1.png" alt=""></li>
+			    	</ul>
+	   		</div>
+   		</div>
+	</div>
+<script>
+	mui.init();
+	
+	mui.plusReady(function(){
+		//加载recommend页面
+		openWebview('#j_recommend', {
+			url: 'recommend.html',
+			id: 'recommend',
+			show: {
+				aniShow: 'slide-in-bottom'
+			}
+		});
+		//加载城市选择页面
+		openWebview('#mySlider', {
+			url: 'location.html',
+			id: 'location',
+			show: {
+				aniShow: 'slide-in-right'
+			}
+		});
+		
+	});
+	document.querySelector('#mySlider').addEventListener('slide', myFunction);
+	
+	//加载新页面
+	function openWebview (hook, param) {
+		document.querySelector(hook).addEventListener('tap', function(){
+			mui.openWindow(param);
+		});
+	}
+</script>
+</body>
+</html>

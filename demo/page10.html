@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>自定义搭配</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<link href="style/reset.css" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page page_recomm_match">
+        <h2 class="head"><span class="head_main">推荐搭配</span><a href="page3.html" class="icon_back"><</a></h2>
+        <div class="con">
+            <div class="weather">
+                <span class="weather_icon"></span>
+                18~25℃
+            </div>
+            <div class="con_img"> 
+                <a href="javascript::"><img src="images/recomm_match.png" alt=""></a>
+                <a href="javascript::"><img src="images/recomm_match.png" alt=""></a>
+                <a href="javascript::"><img src="images/recomm_match.png" alt=""></a>
+                <a href="javascript::"><img src="images/recomm_match.png" alt=""></a>
+                <a href="javascript::"><img src="images/recomm_match.png" alt=""></a>
+            </div>
+            <button id='alertBtn' type="button" class="add_btn">添加到我的搭配</button>
+        </div>
+    </div>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+			//mui初始化
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var info = document.getElementById("info");
+			  document.getElementById("alertBtn").addEventListener('tap',function(){
+			  	mui.alert('欢迎使用Hello MUI','Hello MUI',function(){
+			  		info.innerText = '你刚关闭了警告框';
+			  	});
+			  });
+		</script>
+</body>
+</html>
