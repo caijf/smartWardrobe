@@ -143,7 +143,7 @@ ul.layer_con>li:nth-child(4) span::before { background-color: rgba(190,121,203,.
 
 /*page3*/
 .weather_content {background: none;}
-.page_weather .head { position: relative; width: 100%; height: 300px; margin-bottom: 0; padding-top:0; margin-top: 0;border-radius: 0 0 50% 50%;}
+.page_weather .head { position: relative; width: 100%; height: 300px; margin-bottom: 0; padding-top:0; margin-top: 0;}
 /*.page_weather .head:after {position: absolute;bottom: 0;left: 0;width: 100%;height: 15px;overflow: hidden;}*/
 .page_weather .mui-slider-item:nth-child(1) { background-image: url(../images/weather01.jpg);}
 .page_weather .mui-slider-item:nth-child(2) { background-image: url(../images/weather02.jpg);}
@@ -151,7 +151,7 @@ ul.layer_con>li:nth-child(4) span::before { background-color: rgba(190,121,203,.
 .page_weather .mui-slider-item:nth-child(4) { background-image: url(../images/weather01.jpg);}
 .page_weather .mui-slider-item { background-size: 100% 100%; background-position: 0 0; background-repeat: no-repeat;}
 .page_weather .mui-slider .mui-slider-group .mui-slider-item { height: 300px;;}
-.page_weather .mui-slider { height: 300px;border-radius: 0 0 200% 200%/0 0 55px 40px;box-shadow: 1px 0 9px 0 #ADADAD inset;-webkit-transform:scale(1);transform:scale(1);}
+.page_weather .mui-slider { height: 300px;border-radius: 0px 0px 740px 850px/0px 0px 50px 60px;box-shadow: 1px 0 9px 0 #ADADAD inset;-webkit-transform:scale(1);transform:scale(1);}
 .mui-slider-item a { margin-top: 30px; color: #fff;;}
 .page_weather .head .tit { font-size: 18px;}
 /*.page_weather .head_tit { position: absolute; width: 108px; bottom: 15px; left: 50%; margin-left: -46px;}*/
