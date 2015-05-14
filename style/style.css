@@ -1,6 +1,7 @@
 .icon { display: inline-block; *display: inline; *zoom: 1; background: url(../images/icon.png) 0 0 no-repeat;}
 html { height: 100%; width: 100%;}
-body { height: 100%; width: 100%; background: url(../images/bg.png) no-repeat 0 0; background-size:cover;}
+body { height: 100%; width: 100%; background: url(../images/bg.png) 0 0 no-repeat; background-size: cover;}
+
 h1,h2,h3,h4,h5,h6 { font-weight: normal;}
 .page { position: relative; width: 100%; min-height: 100%; padding-bottom: 43px; font-size: 12px; line-height: 16px; font-family: 'tahoma','STHeiti' 'Microsoft Yahei'; box-sizing:border-box; background-size: 100% 100%;}
 input { border: 0 none; font-family: 'tahoma','STHeiti' 'Microsoft Yahei';}
@@ -16,9 +17,18 @@ a { color: #6B6D6F;}
 .head .head_main{ color: #fff;}
 .head a.tit { color: #fff; display: inline-block;}
 
-/*头部冲定义*/
-.redef_header { position: relative; height: 6%; box-sizing: border-box; line-height: 20px; font-size: 16px; background: none;}
-.redef_header .mui-icon ,.redef_header .mui-title { color: #fff;}
+/*头部重定义*/
+.redef_header { position: relative; height: 40px; box-sizing: border-box; line-height: 20px; font-size: 16px; background: none;}
+.redef_header .mui-icon ,.redef_header .mui-title { color: #fff; text-shadow: 1px 1px #bbb;}
+.mui-bar-nav~.mui-content { padding-top: 0; height: 93%; box-sizing:border-box;}
+
+
+/*页脚*/
+.mui-icon-weather { background: url(../images/tianqi-icon.png) 0 0 no-repeat; background-size: cover;} 
+.mui-icon-clost { background: url(../images/yichu-icon.png) 0 0 no-repeat; background-size: cover;} 
+.mui-icon-match { background: url(../images/dapei-icon.png) 0 0 no-repeat; background-size: cover;} 
+.mui-icon-statistic { background: url(../images/tongji-icon.png) 0 0 no-repeat; background-size: cover;} 
+ 
  
 .panel_tit { height: 27px; margin-left: 10px; color: #808586; font-size: 10px; line-height: 27px; vertical-align: middle;}
 .panel1 { margin-bottom: 20px;}
@@ -156,6 +166,7 @@ ul.layer_con>li:nth-child(4) span::before { background-color: rgba(190,121,203,.
 
 
 /*page4*/
+.page_myclost { padding-top: 30px;}
 .page_myclost .con li { float: left; position: relative; width: 125px; height: 125px; margin-left: 8%; margin-bottom: 20px; background-repeat: no-repeat; background-position: 0 0; background-size: 100% 100%;}
 .page_myclost .con li a { display: block; width: 100%; height: 100%; }
 .page_myclost .con li:nth-child(1) { background-image: url(../images/myclost1.png);}
@@ -243,6 +254,7 @@ ul.layer_con>li:nth-child(4) span::before { background-color: rgba(190,121,203,.
 .page_statistic { height: 100%;}
 .page_statistic .con, .page_type .con, .page_color .con,.page_tempre .con { width: 100%; padding: 10px 0; background: #F6F1F3;}
 .page_statistic .con { min-height: 93%;}
+.page_statistic .con img { display: block; margin: 0 auto;; width: 90%; height: 140px; margin-bottom: 20px;}
 .page_statistic .panel { position: relative; margin: 0 auto 15px; width: 95%; height: 130px; background: #E7E7EA; border-radius: 5px; box-shadow: 0 3px 3px #e3e2e5;}
 .page_statistic .panel .tit { padding-left: 10px; line-height: 40px; font-size: 16px; color: #7fabd2;}
 
