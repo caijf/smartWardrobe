@@ -161,8 +161,9 @@ ul.layer_con>li:nth-child(4) span::before { background-color: rgba(190,121,203,.
 .page_weather .temp { margin-top: 25px; font-size: 20px; font-weight: normal;}
 .page_weather .con { text-align: center; margin-top: 10px;}
 .page_weather .con .unfold { display: inline-block; color: #fff; width: 20px; font-size: 20px; transform:rotate(-90deg); -ms-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -webkit-transform:rotate(-90deg) scale(1,2); -o-transform:rotate(-90deg); text-shadow: 1px 1px #aaa;}
+.page_weather .icon_location {position: absolute;top: 5px;right: 5px;width: 44px;height: 44px;overflow: hidden;background: url(../images/icon_location.png) center center no-repeat;background-size:11px 15px;z-index: 5;}
 .img_show { margin-top: 40px;}
-.img_show li { float: left; width: 30%; margin-left: 10px;}
+.img_show li { float: left; width: 33.3333%; text-align: center;}
 .img_show img { width:  95px; height: 95px; border-radius: 47px;}
 .page_weather .weather_icon {  display: block; margin: 0 auto 20px; width: 70px; height: 50px;background: url(../images/weather.png) 0 0 no-repeat; background-size: 100% 100%;}
 
