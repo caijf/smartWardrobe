@@ -3,14 +3,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
+    <title>添加和编辑服装</title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="style/reset.css" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
     <script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
 </head>
 <body>
-	
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">添加和编辑</h1>
+	</header>
+	<div class="mui-content">
+		<div class="page page_add_clothes">
+		<div class="con">
+            <div class="show_img">
+                <ul class="clearfix">
+                    <li class="curr">
+                        <a href="javascript:;">
+                            <img src="images/page_add_clothes1.png" alt=""></li>
+                        </a>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/page_add_clothes1.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="page8.html">+</a></li>
+                </ul>
+                <div class="show_info">
+                    <a href="editSort.html">类型</a>
+                    <a href="editColor.html">颜色</a>
+                    <a href="editTemperature.html">适合温度</a>
+                    <a href="javascript:;">位置</a>
+                    <input type="number" placeholder="价格" />
+                </div>
+            </div>
+	    </div>
+	    <div class="foot1 foot1_able">
+	    		<a href="page7.html">完成（<span>1</span>件）</a>
+		</div>
+	   </div>
+	</div>
 </body>
 </html>

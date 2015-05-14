@@ -2,7 +2,7 @@
 	var apiKey = 'a55dbf7a726b53c3dd88a7eaba585a69',
 		httpPrefix = 'http://api.reco4life.com/v/api.1.1/',
 		uesrName = 'akm107',
-		snObj = ['040001212', '040001273','040001604'],
+		snObj = ['040001604'],
 		token = '',
 		expires = 0;
 		
