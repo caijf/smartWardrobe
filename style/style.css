@@ -1,9 +1,9 @@
 .icon { display: inline-block; *display: inline; *zoom: 1; background: url(../images/icon.png) 0 0 no-repeat;}
-html { height: 100%; width: 100%;}
-body { height: 100%; width: 100%; background: url(../images/bg.png) 0 0 no-repeat; background-size: cover;}
+html { height: 100%; width: 100%;overflow: hidden;}
+body { height: 100%; width: 100%; background: url(../images/bg.png) 0 0 no-repeat; background-size: cover;overflow: hidden;}
 
 h1,h2,h3,h4,h5,h6 { font-weight: normal;}
-.page { position: relative; width: 100%; min-height: 100%; padding-bottom: 43px; font-size: 12px; line-height: 16px; font-family: 'tahoma','STHeiti' 'Microsoft Yahei'; box-sizing:border-box; background-size: 100% 100%;}
+.page { position: relative; width: 100%; min-height: 100%; font-size: 12px; line-height: 16px; font-family: 'tahoma','STHeiti' 'Microsoft Yahei'; box-sizing:border-box; background-size: 100% 100%;}
 input { border: 0 none; font-family: 'tahoma','STHeiti' 'Microsoft Yahei';}
 a { color: #6B6D6F;}
 .icon { display: inline-block; }
